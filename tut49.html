@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script / string & strings method </title>
+
+</head>
+
+<body>
+    <div class="content">
+        <h1> this is headline</h1>
+        <div id="content"></div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, eligendi expedita neque doloribus magni sit
+        molestiae ducimus earum iusto nesciunt ab, ipsam laudantium atque! Asperiores libero consequatur nostrum, ullam
+        officiis iste harum vel, quaerat dicta, nemo fugiat porro ipsam. Consectetur nemo aspernatur, laudantium sed aut
+        officia fugiat animi.
+    </div>
+    <script>
+        var string = 'this';
+        var name = 'hanuman';
+        var channel = 'codewithharshu';
+        var message = ' jai shree ram is god ';
+        var temp = `${name} is a nice person and he has a channel called ${channel}`;
+
+         console.log(string + name +message);
+        console.log(temp );
+        var len = name.length;
+        console.log(`length of name is ${len}`)
+
+        //console.log("Hello\b World\nhanuman harshu\t  ")
+       // var y = new String("this");
+       // console.log(y);
+
+
+
+        document.getElementById('content').innerHTML = '<h3>This is an h3 heading</h3>'
+
+       // ^  eska matlb ye hain ki apn esme add kr skte hain u html page ke andr java script sai 
+
+    </script>
+</body>
+
+</html>

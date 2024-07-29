@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+        .container {
+            display: flex;
+            height: 300px;
+            width: auto;
+            border: 2px solid black;
+            /* flex properites for flex container*/
+            /* default value is row - apni marji chahe vaha le ja skte hain */
+            flex-direction: row;
+            /* flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;*/
+
+            /* flex-wrap: wrap;*/
+            /*eska mtlb ye he ki size uper niche or veerticle se horizantal kr skte hain */
+            /* flex-wrap: wrap-reverse;*/
+
+            /*flex-flow: wrap row-reverse; shortcut hain ye (flex-direction or flex wrap ek sath likj skte hain ) */
+
+           /* justify-content: center;  /* horizantal krne ke liye use main lete hian */
+            /*justify-content: space-between;*/
+            /*justify-content: space-around;*/
+            /*justify-content: space-evenly;*/
+
+            /*ye sabhi vertical krne me kaam main aat hain */
+            /*align-items: center;*/
+            /* align-items: end;*/
+            /*align-items: stretch;*/
+
+
+        }
+
+        .item {
+            background-color: tomato;
+            margin: 10px;
+            padding: 2px;
+            border: 2px solid yellow;
+            width: 150px;
+            height: 150px;
+        }
+
+        #item1 {
+            /* flex properites for flex item*/
+            /* order bada hoga toh vo baad main dikhai jayega */
+            /*order: 4;*/
+
+            /* flex-grow: 3;
+    flex-shrink: 3;*/
+
+        }
+
+        #item2 {
+           /* flex-grow: 2;
+            flex-shrink: 2;*/
+            /* when flex direction is set to row flex basis: will control widtg*/
+
+          /* flex-basis: 300px;*/
+
+
+        }
+
+        #item3 {
+            /* flex: 2 3 230px; */
+           /*align-items: flex-start;
+            align-items: flex-end;
+          align-items: center;*/
+         }
+    </style>
+</head>
+
+<body>
+    <h1>This is flexbox Tutorial </h1>
+</body>
+<div class="container">
+    <div class="item" id="item1">First box</div>
+    <div class="item" id="item2">Second box</div>
+    <div class="item" id="item3">Third box</div>
+    <!-- <div class="item" id="item4">fourth box </div>
+    <div class="item" id="item5">fifth box</div>
+    <div class="item" id="item6">sixth box</div> -->
+</div>
+
+</html>

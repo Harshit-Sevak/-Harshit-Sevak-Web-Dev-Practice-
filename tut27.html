@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z- index</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+        }
+        #box1{ background-color: blue;
+         position: relative;
+         top: 34px;
+         
+        }
+        #box2{ background-color: rgb(143, 213, 39);
+            position: relative;
+            top: 14px;
+
+           z-index: 34px ; absolute sticky  fixed relative ye sirf position pr hi work krtan hain 
+           /* display: none; esme jo bhi space rhega vo ht jayega */ 
+           /* visibility: hidden;= esme pura box gyab ho jayega*/ 
+        }
+        #box3{ background-color: rgb(217, 161, 18);}
+        #box4{ background-color: rgb(255, 19, 31);}
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "tut69",
+  "version": "1.0.0",
+  "description": "This is the best package ever built by someone",
+  "main": "tut69.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awsome"
+  ],
+  "author": "\"jai shree ram\",",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "express": "~.14.2",
+    "slugify": ">5.7.6"
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+      /*  border: 2px solid rgb(248, 16, 16);*/
+        padding: 12px 32px;
+        margin: 12px 32px;
+        background-color: bisque;
+       /* box-shadow: 2px 3px black;*/
+       /* box-shadow: -3px -3px green;*/
+       box-shadow: 3px 4px 10px  black;
+/* andr ki or shadow */
+      /* box-shadow: inset 4px 3px green ;*/
+
+    }
+    .card h2{
+        text-shadow: 2px 3px 5px rgb(235, 4, 4);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is c++ Course</h2>
+            <p> Started for c++ course and duration for 6 month Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse ad soluta officia maiores nobis possimus
+                veniam consequatur iure harum minima tenetur voluptatem optio, magnam nostrum repellendus rerum velit
+                eaque aperiam!34</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is Html Course </h2> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt soluta provident debitis beatae optio
+                cupiditate necessitatibus? Libero maxime vitae quaerat, sunt saepe nam quae fugiat earum, quasi id
+         Recusandae, eum vitae.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>This is python  Course</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam neque sapiente corrupti dolor commodi
+            repellendus officiis sequi velit, veniam minima quo. Distinctio ullam ipsam tenetur, magnam velit ad. Neque,
+            sunt!
+        </div>
+
+    </div>
+</body>
+
+</html>

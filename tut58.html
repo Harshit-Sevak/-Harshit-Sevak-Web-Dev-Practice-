@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Set timeout clear timeout</title>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Time now is <span id="time"></span>
+        </h1>
+    </div>
+
+    <script>
+
+        
+        console.log('this is tutorial 58 started here ')
+         //setTimeout = allows us to run the function  once after the interval of time 
+         // cleartimeout = allows us to run the function repeated after the interval of time 
+
+       // function greet  (name , byetext)  { 
+         //   console.log("Hello Good Morning " + name +" " + byetext);
+
+        //}
+         //timeout =setTimeout(greet,  5000, "harshu", "Take care" );
+        //console.log(timeout)
+
+         // clearTimeout(timeout);
+
+          //   setTimeout(greet (), 5000);  // eske andr kbhi parntheeses nhi aayega ye direct run krega phir toh 
+
+      //ontervalid = setInterval(greet, 1000, "harshu " , " take care ");
+     // clearinterval(intervalid);
+
+   function displaytime(){
+    time = new Date();
+    console.log(time);
+    document.getElementById('time').innerHTML = time;}
+   setInterval(displaytime, 1000);          
+    </script>
+</body>
+</html>

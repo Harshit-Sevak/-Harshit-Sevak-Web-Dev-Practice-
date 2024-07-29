@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            background-color: chocolate;
+            height: 3000px;
+        }
+
+        /*  CSS position: static (default), absolute, relative, fixed, sticky */
+        .box {
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+
+        #box3 {
+            /*relative: relative to its normal position  and will leave a gap at its normal position */
+            /* position: relative;*/
+
+            /*absolute: relative to the position of its first parent */
+            /*position: absolute;*/
+
+            /*top: 34px;
+        left: 34px;*/
+
+
+            /* ye ek ki place pr jakr rukh jata hian scrool krne pr */
+            /* position: fixed;
+        right: 4px;
+        bottom: 4px;*/
+
+
+        /*ek jgh pr rukh jana ye uper ki or main kaam main aata hain*/
+            /* sticky */
+           position: sticky;
+           top: 3px;
+        }
+
+        #box2 { /*   eska mltln ki ek hi jgh pr rhegii  ye vali position */
+            position: relative;
+            top: 5px;
+        }
+
+        #box1 {
+            position: fixed;
+            top: 455px;
+        }
+
+        #box4{
+            position: absolute;
+            top: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3 chat with us </div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

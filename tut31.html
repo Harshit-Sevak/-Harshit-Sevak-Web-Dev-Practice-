@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Selector</title>
+<style>
+    h1{
+        color: black;
+        background-color: yellow;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+
+ /* if div after li so that property is lagu ho jayega*/  
+   /* div li p{ 
+        color: red;
+        background-color: aqua;
+        font weight: bold;
+    }*/
+
+   /* div > p{ 
+        color: red;
+        background-color: aqua;
+    }*/
+
+    
+    div + p{ /* div ke baad  jo bhi aata hain us pr ye lagi ho jayega  harshu ji */
+        color: red;
+        background-color: aqua;
+    }
+</style>
+</head>
+<body>
+    <h1>this are more selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"> <p>this is a inside paragraph </p></li>
+            </ul>
+            <P>this is a paragraph</P>
+        </div>
+        <p>this is a another paragraph</p>
+
+    </div>
+    <p>this is a outsatanding paragraph</p>
+</body>
+</html>

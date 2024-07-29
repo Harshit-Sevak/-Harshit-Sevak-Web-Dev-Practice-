@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After sseudo Selector</title>
+    <style>
+        body {
+            
+            color: white;
+            background-color: black;
+            
+        }
+    
+            header::before{
+                background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+                content: "";
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                opacity: 0.3;
+            
+            
+        }
+
+        .navigation {
+            display: flex;
+            font-size: 20px;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            margin: 23px 150px;
+            text-align: center;
+            height: 250px;
+            justify-content: center;
+        }
+        li a:hover{
+             background-color: rgb(178, 171, 171);
+            
+        }
+        /*section::before{
+            content: "This is content "
+        }*/
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+        
+        
+        /*li a:hover{
+            color: white;
+            text-decoration: none;
+        }*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="navigation">
+                <li class="item"> <a >Home</a></li>
+                <li class="item"> <a >About</a></li>
+                <li class="item"> <a >Services</a></li>
+                <li class="item"> <a >Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+        <section>
+            <h1>Welcome to Conding World</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem accusamus amet molestiae non natus
+                expedita nisi nostrum iste voluptatibus sapiente harum inventore ducimus sed tenetur ab similique,
+                maxime est accusantium blanditiis. Iusto, necessitatibus itaque minima soluta non illum libero?</p>
+        </section>
+        <hr>
+</body>
+
+</html>           

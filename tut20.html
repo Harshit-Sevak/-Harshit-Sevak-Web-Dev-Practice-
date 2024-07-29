@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(169 223 187 / 44%);
+}
+
+    .container{
+         background-color: rgb(246, 247, 187);
+        border: 3px solid;
+
+        /* we can set margin/panding for top, bottom , left and right like this */
+        /*padding-left: 45;
+        padding-top: 45;
+        padding-bottom: 25;
+        padding-right: 45;*/
+
+        /*
+        margin-top: 45;
+        margin-bottom: 25;
+        margin-left: 25;
+        margin-right: 25; */
+        
+       /* margin: top right bottom left */
+       /* padding: top right bottom left;*/
+
+       /*margin: 23px 52px 12px 45px;*/
+       /* padding: 23px 56px 45px 25px ; */
+
+       /* panding: y(top/bottom) x(left/right);*/
+        /* margin: y(top/bottom) x(left/right);*/
+       padding: 25px 45px;  
+       margin: 25px 42px;
+       border-radius: 23px;
+       width: 400px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h4>This is my Heading</h4>
+        <p id="First">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur exercitationem,
+            voluptatum qui, quasi repellat ipsa inventore porro, eaque blanditiis ipsum ducimus? Nulla cupiditate
+            nesciunt omnis facilis aut eius eligendi?</p>
+    </div>
+    <div class="container">
+        <h4>This is my Heading</h4>
+        <p id="Second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur exercitationem,
+            voluptatum qui, quasi repellat ipsa inventore porro, eaque blanditiis ipsum ducimus? Nulla cupiditate
+            nesciunt omnis facilis aut eius eligendi?</p>
+    </div>
+    <div class="container">
+        <h4>This is my Heading</h4>
+        <p id="Third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur exercitationem,
+            voluptatum qui, quasi repellat ipsa inventore porro, eaque blanditiis ipsum ducimus? Nulla cupiditate
+            nesciunt omnis facilis aut eius eligendi?</p>
+    </div>
+
+
+</body>
+
+</html>
